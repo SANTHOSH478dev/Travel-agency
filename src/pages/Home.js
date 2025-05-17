@@ -1,5 +1,6 @@
 // src/pages/Home.js
 import React from "react";
+import { Link } from "react-router-dom";
 
 const destinations = [
   { name: "Jaipur", image: `${process.env.PUBLIC_URL}/images/jaipur.jpg` },
@@ -25,12 +26,12 @@ const Home = () => (
           <p className="text-xl mb-6">
             Explore the most beautiful places in India with us!
           </p>
-          <a
-            href="/bookings"
+          <Link
+            to="/bookings"
             className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded shadow-lg transition-transform transform hover:scale-105"
           >
             Book Now
-          </a>
+          </Link>
         </div>
       </div>
     </div>
