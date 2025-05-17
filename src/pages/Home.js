@@ -11,12 +11,11 @@ const destinations = [
   { name: "Kerala", image: `${process.env.PUBLIC_URL}/images/kerala.jpg` },
 ];
 
-
 const Home = () => (
   <div className="text-center">
     <div
       className="relative bg-cover bg-center h-[400px] rounded-xl overflow-hidden shadow-lg"
-      style={{ backgroundImage: "url('/images/india1.jpg')" }}
+      style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/india1.jpg)` }}
     >
       <div className="bg-black bg-opacity-50 h-full w-full flex items-center justify-center">
         <div className="text-white p-6">
@@ -38,9 +37,9 @@ const Home = () => (
 
     <h3 className="text-3xl font-semibold mt-12 mb-6">Top Destinations</h3>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
-      {destinations.map((place, idx) => (
+      {destinations.map((place) => (
         <div
-          key={idx}
+          key={place.name}
           className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300"
         >
           <img
