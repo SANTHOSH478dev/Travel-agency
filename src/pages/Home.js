@@ -2,14 +2,15 @@
 import React from "react";
 
 const destinations = [
-  { name: "Jaipur", image: "/images/jaipur.jpg" },
-  { name: "Goa", image: "/images/goa.jpg" },
-  { name: "Ladakh", image: "/images/ladakh.jpg" },
-  { name: "Munnar", image: "/images/munnar.jpg" },
-  { name: "Ooty", image: "/images/ooty.jpg" },
-  { name: "Kolkata", image: "/images/kolkata.jpg" },
-  { name: "Kerala", image: "/images/Kerala.jpg" },
+  { name: "Jaipur", image: `${process.env.PUBLIC_URL}/images/jaipur.jpg` },
+  { name: "Goa", image: `${process.env.PUBLIC_URL}/images/goa.jpg` },
+  { name: "Ladakh", image: `${process.env.PUBLIC_URL}/images/ladakh.jpg` },
+  { name: "Munnar", image: `${process.env.PUBLIC_URL}/images/munnar.jpg` },
+  { name: "Ooty", image: `${process.env.PUBLIC_URL}/images/ooty.jpg` },
+  { name: "Kolkata", image: `${process.env.PUBLIC_URL}/images/kolkata.jpg` },
+  { name: "Kerala", image: `${process.env.PUBLIC_URL}/images/kerala.jpg` },
 ];
+
 
 const Home = () => (
   <div className="text-center">
