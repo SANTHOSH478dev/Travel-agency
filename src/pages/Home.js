@@ -15,7 +15,7 @@ const Home = () => (
   <div className="text-center">
     <div
       className="relative bg-cover bg-center h-[400px] rounded-xl overflow-hidden shadow-lg"
-      style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/india1.jpg)` }}
+      style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/kerala.jpg)` }}
     >
       <div className="bg-black bg-opacity-50 h-full w-full flex items-center justify-center">
         <div className="text-white p-6">
